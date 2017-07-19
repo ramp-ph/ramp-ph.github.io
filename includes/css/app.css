@@ -795,6 +795,10 @@ footer {
   .page-dresses .page-banner img {
     width: 100%; }
 
+.page-dresses .cart-window {
+  margin-top: 8vh;
+  height: 92%; }
+
 .page-dresses .shop-container {
   height: 92vh;
   position: relative; }
@@ -937,6 +941,10 @@ footer {
   margin-top: 8vh; }
   .page-tops .page-banner img {
     width: 100%; }
+
+.page-tops .cart-window {
+  margin-top: 8vh;
+  height: 92%; }
 
 .page-tops .shop-container {
   height: 92vh;
