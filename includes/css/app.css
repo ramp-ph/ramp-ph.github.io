@@ -588,7 +588,6 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
       margin-bottom: 5%; } }
   @media screen and (max-width: 414px) {
     .new-arrivals li {
-      width: 100%;
       text-align: center; } }
   .new-arrivals li:nth-child(1) .new-thumb {
     background-image: url("/images/new/new10.jpg");
@@ -673,7 +672,6 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
         margin-bottom: 5%; } }
     @media screen and (max-width: 414px) {
       .trending-now li {
-        width: 100%;
         text-align: center; } }
     .trending-now li:nth-child(1) .trending-thumb {
       background-image: url("/images/new/new10.jpg");
