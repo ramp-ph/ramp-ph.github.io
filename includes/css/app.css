@@ -574,9 +574,6 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
   @media screen and (max-width: 600px) {
     .new-arrivals .new-thumb {
       height: 60vw; } }
-  @media screen and (max-width: 414px) {
-    .new-arrivals .new-thumb {
-      height: 100vw; } }
 
 .new-arrivals li {
   width: 15.66%;
@@ -659,9 +656,7 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
     @media screen and (max-width: 600px) {
       .trending-now .trending-thumb {
         height: 60vw; } }
-    @media screen and (max-width: 414px) {
-      .trending-now .trending-thumb {
-        height: 100vw; } }
+
   .trending-now li {
     width: 15.66%;
     float: left;
