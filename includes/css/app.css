@@ -433,7 +433,14 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
   position: relative;
   background-size: 98% auto;
   background-repeat: no-repeat;
-  overflow: hidden; }
+  overflow: hidden;
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  transform: translateX(10%); }
   @media screen and (max-width: 600px) {
     .collections .col-sm-3 {
       height: 70vw;
@@ -527,6 +534,27 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
       .collections .col-sm-3 h2 {
         font-size: 32px; } }
 
+.collections .is-visible {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }
+
+.new-arrivals div {
+  opacity: 0;
+  -webkit-transition: all ease-in-out 0.3s;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all ease-in-out 0.3s;
+  -webkit-transform: translateX(10%);
+  -ms-transform: translateX(10%);
+  transform: translateX(10%); }
+
+.new-arrivals .is-visible {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }
+
 .new-arrivals .new-arrivals-header {
   position: relative;
   height: 5vw;
@@ -583,9 +611,6 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
     .new-arrivals li {
       width: 49%;
       margin-bottom: 5%; } }
-  @media screen and (max-width: 414px) {
-    .new-arrivals li {
-      text-align: center; } }
   .new-arrivals li:nth-child(1) .new-thumb {
     background-image: url("/images/new/new10.jpg");
     background-size: 100% 100%; }
@@ -611,6 +636,19 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
 
 .trending-now {
   padding-bottom: 4%; }
+  .trending-now div {
+    opacity: 0;
+    -webkit-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    -webkit-transform: translateX(10%);
+    -ms-transform: translateX(10%);
+    transform: translateX(10%); }
+  .trending-now .is-visible {
+    opacity: 1;
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0); }
   .trending-now .trending-now-header {
     margin-bottom: 1%;
     position: relative;
@@ -656,7 +694,6 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
     @media screen and (max-width: 600px) {
       .trending-now .trending-thumb {
         height: 60vw; } }
-
   .trending-now li {
     width: 15.66%;
     float: left;
@@ -665,9 +702,6 @@ body::-webkit-scrollbar, .shop-content::-webkit-scrollbar {
       .trending-now li {
         width: 49%;
         margin-bottom: 5%; } }
-    @media screen and (max-width: 414px) {
-      .trending-now li {
-        text-align: center; } }
     .trending-now li:nth-child(1) .trending-thumb {
       background-image: url("/images/new/new10.jpg");
       background-size: 100% 100%; }
