@@ -118,16 +118,59 @@ $(document).ready(function() {
 
   });
 
-  // start navbar - custom style ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  // start navbar - custom style // scroll trigger ~~~~~~~~~~~~~~~~~~~~~~~~~~~
   $(window).scroll(function(){
     var wScroll = $(this).scrollTop();
-    if(wScroll > $('.collections').offset().top){
+
+    if(wScroll > $('.collections').offset().top - ($(window).height() / 1.4)) {
       $('.nav-bar').addClass('nav-custom');
+      $('.collections div').each(function(i) {
+        setTimeout(function() {
+          $('.collections div').eq(i).addClass('is-visible');
+        }, 150 * (i+1));
+      });
     }
     else{
       $('.nav-bar').removeClass('nav-custom');
+      $('.collections div').each(function(i) {
+        setTimeout(function() {
+          $('.collections div').eq(i).removeClass('is-visible');
+        }, 150 * (i+1));
+      });
     }
-    });
+
+    // start new-arrivals scroll triggered anim ~~~
+    if(wScroll >= $('.new-arrivals').offset().top - ($(window).height() / 1.1)) {
+      $('.new-arrivals div').each(function(i) {
+        setTimeout(function() {
+          $('.new-arrivals div').eq(i).addClass('is-visible');
+        }, 150 * (i+1));
+      });
+    }
+    else{
+      $('.new-arrivals div').each(function(i) {
+        setTimeout(function() {
+          $('.new-arrivals div').eq(i).removeClass('is-visible');
+        }, 150 * (i+1));
+      });
+    }
+
+    // start trending-now scroll triggered anim ~~~
+    if(wScroll >= $('.trending-now').offset().top - ($(window).height() / 1.1)) {
+      $('.trending-now div').each(function(i) {
+        setTimeout(function() {
+          $('.trending-now div').eq(i).addClass('is-visible');
+        }, 150 * (i+1));
+      });
+    }
+    else{
+      $('.trending-now div').each(function(i) {
+        setTimeout(function() {
+          $('.trending-now div').eq(i).removeClass('is-visible');
+        }, 150 * (i+1));
+      });
+    }
+  }); // end wScroll trigger ~~~
 
     // start how to order button ~~~~~~~~~~~~~~~~~~~~
     $('.order-button').click(function() {
